@@ -1,0 +1,12 @@
+{
+    "nama_depan": "Muhammad" ,
+    "nama_belakang": "Faqihuddin M" ,
+    "hobi":["berenang", "bersepeda", "bersama keluarga"],
+    "angka_favorit": 99,
+    "memakai_kacamata" : true,
+    "alamat_domisili": {
+        "jalan":"jl. jalan",
+        "kota": "Kota Kenangan"
+    } 
+}
+

@@ -1,0 +1,9 @@
+{
+    "nama": "M Faqih" ,
+    "umur": 30,
+    "alamat": {
+        "jalan":"jl. sample",
+        "kota": "Jakarta"
+    },
+    "hobi":["berenang", "membaca", "memasak"]
+}

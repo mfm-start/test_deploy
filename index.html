@@ -9,7 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-body-secondary">
     <nav class="navbar bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
         <div class="container">
             <a class="navbar-brand" href="https://www.telkomsel.com">
@@ -42,21 +42,86 @@
 
     <!-- Body -->
     <div class="container">
-        <div class="roow">
+      
+      <!-- div profile -->
+      <div class="row justify-content-md-center">
 
-            <div class="col-sm-8">
-                <h1>Home Page</h1>
-                <h2 id="main_name" class="mt-5 p-5">Hi, My Name Is </h2>
-                <p id="fullname" class="align-text-middle"></p>
-
-
+        <div class="col col-sm-10 align-self-center bg-white p-3">
+        <div class="row">
+            <!-- div image pp -->
+            <div class="col col-sm-2 align-middle mt-4">
+                <img src="./images/sample_pp.jpg" alt="pp" class="mw-50 mh-100 rounded-circle object-fit-cover align-middle" 
+                style="width: 150px; height: 150px;" 
+                >
             </div>
-
-            <div class="col-sm-4">
-
+  
+            <!-- div Name and Button --> 
+            <div class="col col-sm-5 row">
+                <h2 class="mt-4" id="name_info">
+                    Muhammad Faqihuddin M
+                </h2>
+                <p id="role_info">
+                  Front End Developer
+                </p>
+                <div class="col col-2">
+                  <button type="button" class="btn btn-primary btn-md" onclick="edit_profile()">
+                      Edit
+                  </button>
+                </div>
+                <div class="col col-2">
+                  <button type="button" class="btn btn-outline-success btn-md">
+                      Resume
+                  </button>
+                </div>
             </div>
-
+  
+            <div class="col col-2 fw-bold border-start mt-4">
+                <p>Availability</p>
+                <p>Usia</p>
+                <p>Lokasi</p>
+                <p>Pengalaman</p>
+                <p>Email</p>
+            </div>
+            <div class="col col-3 align-middle mt-4">
+                <p id="availability_info">Full Time</p>
+                <p id="age_info">28</p>
+                <p id="location_info">Jakarta, Indonesia</p>
+                <p id="experience_info">4</p>
+                <p id="email_info">faqih.xxxx@gmail.com</p>
+            </div>
         </div>
+        </div>
+      </div>
+      
+        
+        <!-- div form -->
+        <div class="row" id="div_form" style="display: none;">
+          <div class="col-sm-10 container-fluid align-self-center bg-white p-4 d-grid gap-2 mt-3">
+            <form action="" class="m-1">
+              <label class="m-1 fw-bold" for="input_name">Nama</label><br>
+              <input type="text" name="input_name" id="input_name" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_role">Role</label><br>
+              <input type="text" name="input_role" id="input_role" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_availability">Availability</label><br>
+              <input type="text" name="input_availability" id="input_availability" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_age">Usia</label><br>
+              <input type="text" name="input_age" id="input_age" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_location">Lokasi</label><br>
+              <input type="text" name="input_location" id="input_location" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_yExperience">Years Experience</label><br>
+              <input type="text" name="input_yExperience" id="input_yExperience" style="width: 100%;"><br>
+              <label class="m-1 fw-bold" for="input_email">Email</label><br>
+              <input type="text" name="input_email" id="input_email" style="width: 100%;"><br>
+              <br>
+            </form>
+            <button class="btn btn-success btn-block border border-primary p-2" 
+              style="--bs-border-opacity: .5;" 
+              type="button"
+              onclick="submit_form()">
+              Submit
+            </button>
+          </div>
+        </div> 
     </div>
 
   
